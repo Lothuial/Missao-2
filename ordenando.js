@@ -10,7 +10,6 @@ const shuffle = (vector, amountSwaps) => {
         const index2 = Math.floor(Math.random() * vectorLength);
         swap(vector, index1, index2);
     };
-    return vector;
 }
 
 const bubbleSort = (vector) => {
@@ -22,7 +21,6 @@ const bubbleSort = (vector) => {
             };
         };
     };
-    return vector;
 }
 
 const selectionSort = (vector) => {
@@ -46,7 +44,6 @@ const quickSort = (vector, posInit = 0, posFin = vector.length - 1) => {
         quickSort(vector, posInit, indexPivot - 1);
         quickSort(vector, indexPivot + 1, posFin);
     }
-    return vector;
 }
 
 const particionamento = (vector, posInit, posFin, pivot) => {
